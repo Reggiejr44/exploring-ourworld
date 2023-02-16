@@ -1,7 +1,7 @@
 :root {
-  --purple: #bc8ac6;
-  --light-purple: #d7b9dd;
-  --dark-puple: #966e9e;
+  --purple: #1c07d7;
+  --light-purple: rgb(78, 200, 237);
+  --dark-puple: rgb(78, 200, 237);;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-  background-color: lightpink;
+  background-color: rgb(78, 200, 237);
   border-bottom: 2px solid black;
 }
 
