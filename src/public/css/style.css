@@ -1,0 +1,68 @@
+:root {
+  --purple: #bc8ac6;
+  --light-purple: #d7b9dd;
+  --dark-puple: #966e9e;
+}
+
+body {
+  font-family: "Anton", sans-serif; 
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: lightpink;
+  border-bottom: 2px solid black;
+}
+
+.navbar a:hover {
+  background-color: var(--purple) !important;
+}
+
+#small_home {
+  font-size: 20px;
+}
+
+#big_home {
+  font-size: 65px;
+  line-height: 0.25;
+}
+
+
+.whitetxt {
+  color: white;
+  text-align: center;
+}
+
+button {
+  background-color: var(--light-purple) !important;
+  color: white;
+  width: 10rem;
+  margin: 3px;
+  font-weight: bold;
+}
+
+button :hover {
+  background-color: var(--dark-purple) !important;
+}
+
+@media screen and (min-width: 678px) {
+  #circle_home {
+    width: 600px;
+    height: 600px;
+    padding-top: 8rem;
+  }
+
+  #big_home {
+    font-size: 175px;
+    line-height: 1;
+  }
+
+  #small_home {
+    font-size: 25px;
+  }
+}
