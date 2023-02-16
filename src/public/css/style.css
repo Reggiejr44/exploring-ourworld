@@ -1,5 +1,5 @@
 :root {
-  --purple: #bc8ac6;
+  --purple: #959096;
   --light-purple: #d7b9dd;
   --dark-puple: #966e9e;
 }
@@ -7,7 +7,7 @@
 body {
   font-family: "Anton", sans-serif; 
   background-size: cover;
-  /* background-color: rgb(116, 203, 232); */
+  background-color: blue;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-  background-color: lightpink;
+  background-color: lightgreen;
   border-bottom: 2px solid black;
 }
 
@@ -41,7 +41,7 @@ body {
 
 
 .whitetxt {
-  color: black;
+  color: lightgreen;
   text-align: center;
 }
 
