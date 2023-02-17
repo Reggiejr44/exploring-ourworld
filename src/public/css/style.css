@@ -1,27 +1,21 @@
 :root {
-  --purple: #959096;
-  --light-purple: #d7b9dd;
-  --dark-puple: #966e9e;
+  --purple: #1c07d7;
+  --light-purple: rgb(78, 200, 237);
+  --dark-puple: rgb(78, 200, 237);;
 }
 
 body {
   font-family: "Anton", sans-serif; 
   background-size: cover;
-  background-color: blue;
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   box-sizing: border-box;
-  /* background-image: url('src/public/images/earth.jgeg.webp');
-  background-size: cover; */
-}
-.background-image {
-  background-image: url('ssrc/public/images/earth-gebf207fc5_1920.jpg');
-  background-size: cover;
 }
 
 .navbar {
-  background-color: lightgreen;
+  background-color: rgb(78, 200, 237);
   border-bottom: 2px solid black;
 }
 
@@ -36,12 +30,11 @@ body {
 #big_home {
   font-size: 65px;
   line-height: 0.25;
-  text-decoration: underline;
 }
 
 
 .whitetxt {
-  color: lightgreen;
+  color: white;
   text-align: center;
 }
 

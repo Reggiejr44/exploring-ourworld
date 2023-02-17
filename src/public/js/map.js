@@ -3,9 +3,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-restricted-syntax */
 // Gets City Buttons by ID
-const austin = document.getElementById('austin');
-const houston = document.getElementById('houston');
-const dallas = document.getElementById('dallas');
+const atlanta = document.getElementById('atlanta');
+const smyrna = document.getElementById('smyrna');
+const peachtreecorners = document.getElementById('peachtree-corners');
 const addMarkerButton = document.getElementById('add-marker');
 const markerName = document.getElementById('marker-name');
 const markerLatitude = document.getElementById('marker-latitude');
@@ -115,24 +115,24 @@ const sendNewMarkerToDB = async () => {
 init();
 
 // Click functions to render specific map coordinates
-austin.addEventListener('click', (e) => {
+atlanta.addEventListener('click', (e) => {
   e.preventDefault();
   mapData = '';
-  let value = austin.innerText;
+  let value = atlanta.innerText;
   getMapAndMarkerData(value);
 });
 
-houston.addEventListener('click', (e) => {
+smyrna.addEventListener('click', (e) => {
   e.preventDefault();
   mapData = '';
-  let value = houston.innerText;
+  let value = smyrna.innerText;
   getMapAndMarkerData(value);
 });
 
-dallas.addEventListener('click', (e) => {
+peachtreecorners.addEventListener('click', (e) => {
   e.preventDefault();
   mapData = '';
-  let value = dallas.innerText;
+  let value = peachtreecCorners.innerText;
   getMapAndMarkerData(value);
 });
 
