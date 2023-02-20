@@ -1,6 +1,10 @@
 # EarthX
 
   ![badge](https://img.shields.io/badge/license-mit-blue)
+  
+  ## Heroku Project Link
+  
+  https://earth-x.herokuapp.com/
 
   ## Table-of-Contents
 
