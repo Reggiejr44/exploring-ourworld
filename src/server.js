@@ -17,7 +17,7 @@ const app = express();
   const hbs = exphbs.create({ helpers });
 
   const sessionConfig = {
-    secret: process.env.DB_SECRET,
+    secret: 'mysupersecret',
     cookie: {
       maxAge: 300000,
       httpsOnly: true,
