@@ -4,7 +4,7 @@
   
   ## Heroku Project Link
   
-  https://earth-x.herokuapp.com/
+ https://earth-x.herokuapp.com/
 
   ## Table-of-Contents
 
