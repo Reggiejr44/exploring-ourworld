@@ -24,10 +24,9 @@
 
   ## [Usage](#table-of-contents)
 
-  To use this application, follow this link: [link] login or create an account, and begin looking for and pinning your favorite spots!
+  To use this application, follow this link: [link](https://earth-x.herokuapp.com/) login or create an account, and begin looking for and pinning your favorite spots!
 
-  The following image shows what the application looks like:
-  [image]
+  
   
    
 
