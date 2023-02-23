@@ -111,7 +111,7 @@ const sendNewMarkerToDB = async () => {
   getMapAndMarkerData();
 };
 
-// init();
+init();
 
 // Click functions to render specific map coordinates
 atlanta.addEventListener('click', (e) => {
