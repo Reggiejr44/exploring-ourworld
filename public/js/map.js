@@ -14,16 +14,16 @@ const markerDescription = document.getElementById('marker-description');
 
 let mapData;
 let googleStreets;
-let map;
+let map2;
 let markerData;
 
 const listenForClick = () => {
-  if (map) {
-    map.on('dblclick', (e) => {
-      map.eachLayer((layer) => {
+  if (map2) {
+    map2.on('dblclick', (e) => {
+      map2.eachLayer((layer) => {
         if (layer !== googleStreets) layer.remove();
       });
-      L.marker(e.latlng).addTo(map);
+      L.marker(e.latlng).addTo(map2);
       markerLatitude.value = e.latlng.lat;
       markerLongitude.value = e.latlng.lng;
     });
@@ -32,8 +32,8 @@ const listenForClick = () => {
 
 // Renders Map Tile with Leaflet.js Library with Default Zoom
 const renderMapData = (lat, lon, zoom = 5.5) => {
-  if (map) map.remove();
-  map = L.map('map').setView([lat, lon], zoom);
+  if (map2) map.remove();
+  map2 = L.map('map').setView([lat, lon], zoom);
 
   googleStreets = L.tileLayer(
     'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
@@ -42,7 +42,7 @@ const renderMapData = (lat, lon, zoom = 5.5) => {
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     },
   );
-  googleStreets.addTo(map);
+  googleStreets.addTo(map2);
 };
 
 const init = async () => {
@@ -65,7 +65,7 @@ const renderMapMarkers = (markers) => {
       mark.marker_coordinates_lat,
       mark.marker_coordinates_lon,
     ]);
-    marker.addTo(map);
+    marker.addTo(map2);
     marker
       .bindPopup(`<h2><strong>${mark.name}</strong></h2>${mark.description}`)
       .openPopup();
@@ -96,11 +96,10 @@ const sendNewMarkerToDB = async () => {
     marker_coordinates_lon: markerLongitude.value,
   };
 
+  console.log('body', body)
+
   await fetch(`/api/markers/${mapData.id}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
     body: JSON.stringify(body),
   });
 
@@ -112,7 +111,7 @@ const sendNewMarkerToDB = async () => {
   getMapAndMarkerData();
 };
 
-init();
+// init();
 
 // Click functions to render specific map coordinates
 atlanta.addEventListener('click', (e) => {
