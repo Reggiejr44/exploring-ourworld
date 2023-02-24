@@ -1,6 +1,6 @@
-const User = require('./user');
-const Marker = require('./marker');
-const Maps = require('./maps');
+const User = require('./User');
+const Marker = require('./Marker');
+const Maps = require('./Maps');
 
 User.hasMany(Marker, {
     foreignKey: 'user_id',
